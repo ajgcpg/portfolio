@@ -1,0 +1,27 @@
+#Arrow, #ArrowHover{
+    height: 75px;
+    cursor: pointer;
+    margin-top: 2.5rem;
+}
+
+.Up{
+    transform: rotate(180deg);
+}
+
+#Arrow path{
+    fill: white;
+    stroke: white;
+    stroke-width: 2px;
+    stroke-dasharray: 329.16229248046875px;
+    stroke-dashoffset: 329.16229248046875px;
+    transition:  fill 0.4s ease, stroke-dashoffset 0.4s ease-in-out;
+}
+
+#ArrowHover path{
+    fill: rgba(255, 255, 255, .2);
+    stroke: white;
+    stroke-width: 2px;
+    stroke-dasharray: 329.16229248046875px;
+    stroke-dashoffset: 0px;
+    transition: fill 0.4s ease, stroke-dashoffset 0.4s ease-in-out 0.1s;
+}

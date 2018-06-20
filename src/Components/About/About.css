@@ -1,0 +1,73 @@
+.About h2{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-height: 2.25rem;
+    color: slategray;
+    font-weight: bold;
+    background: rgba(255, 255, 255, .8);
+}
+
+.About p{
+    padding: 2.5rem;
+    background: rgba(255, 255, 255, .9);
+    max-height: 50%;
+    overflow-y: scroll;
+}
+
+.About{
+    height: 100vh;
+    padding: 0 7.5rem;
+    box-shadow: 0px 5px 50px black;
+    background-size: cover;
+    background: url('./desk_splash.jpg') no-repeat fixed center;
+    text-align: center;
+}
+
+.Container{
+    margin-top: 1.25rem;
+    background: rgba(255, 255, 255, .55);
+    height: 55%;
+    padding: 2rem;
+}
+
+.Left{
+    float: left;
+    padding-left: 2.5%;
+    height: 100%;
+    width: 77.5%;
+}
+
+.Right{
+    float: right;
+    padding-right: 2.5%;;
+    height: 100%;
+    width: 12.5%;
+}
+
+.Links{
+    background: rgba(255, 255, 255, .8);
+    display: flex;
+    flex-direction: column;
+    max-height: 45vh
+}
+
+.Icon{
+    height: 50px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+path{
+    pointer-events: none;
+}
+
+p::-webkit-scrollbar{
+    background: transparent;
+}
+
+p::-webkit-scrollbar-thumb {
+    background: #d1d1ce;
+}

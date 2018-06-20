@@ -1,0 +1,47 @@
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+a{
+    pointer-events: none;
+}
+
+.MenuBar{
+    position: fixed;
+    animation: 1s ease-out 0s 1 slideInFromTop;
+    display: inline-block;
+    height: 52.5px;
+    width: 100%;
+    background: rgba(0, 0, 0, .3);
+}
+
+.Home{
+    float: left;
+}
+
+.Pages{
+    padding-top: .75rem;
+    padding-left: .75rem;
+    float: right;
+}
+
+.MenuItem, .Home{
+    display: inline;
+    padding: .75rem;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(to bottom, white 90%, darkgray 10%) no-repeat 0 -3.75em;
+    transition: background-position .4s ease-in-out, color .4s;
+    font-size: 20px;
+}
+
+.MenuItem:hover, .Home:hover{
+    background-position: 0 100%;
+    color: gray;
+    transition: .4s
+}
