@@ -18,9 +18,11 @@
 .About{
     height: 100vh;
     padding: 0 7.5rem;
-    box-shadow: 0px 5px 50px black;
+    box-shadow: 0 5px 50px black;
     background-size: cover;
-    background: url('./desk_splash.jpg') no-repeat fixed center;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     text-align: center;
 }
 
